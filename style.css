@@ -8,7 +8,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Essencial para layouts previsíveis */
+    box-sizing: border-box; 
     outline: none;
     border: none;
     text-decoration: none;
@@ -16,21 +16,21 @@
 }
 
 html {
-    font-size: 62.5%; /* Truque para 1rem = 10px */
-    overflow-x: hidden; /* Evita rolagem lateral indesejada */
-    scroll-behavior: smooth; /* Rolagem suave ao clicar nos links */
-    scroll-padding-top: 9rem; /* Compensa a altura do header fixo ao rolar */
+    font-size: 62.5%; 
+    overflow-x: hidden; 
+    scroll-behavior: smooth; 
+    scroll-padding-top: 9rem; 
 }
 
 body {
     background-color: var(--bg);
-    font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
-    font-size: 1.6rem; /* Tamanho base do texto legível (16px) */
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.6rem; 
 }
 
-/* Utilitários Globais */
+
 section {
-    padding: 5rem 7%; /* Padding lateral responsivo */
+    padding: 5rem 7%; /
 }
 
 .btn {
@@ -41,16 +41,16 @@ section {
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
-    border-radius: 0.5rem; /* Borda levemente arredondada fica mais atual */
+    border-radius: 0.5rem; 
 }
 
 .btn:hover {
     letter-spacing: 0.1rem;
-    background-color: #c59d6d; /* Cor um pouco mais escura no hover */
+    background-color: #c59d6d; 
 }
 
 .title {
-    font-size: 4rem; /* Reduzi um pouco para caber melhor em mobile */
+    font-size: 4rem; 
     color: var(--main-color);
     text-align: center;
     text-transform: uppercase;
@@ -61,7 +61,7 @@ section {
     color: #fff;
 }
 
-/* Imagens responsivas por padrão */
+
 img {
     max-width: 100%;
     height: auto;
@@ -85,7 +85,7 @@ img {
 }
 
 .header .logo img {
-    height: 5rem; /* Ajuste conforme necessidade */
+    height: 5rem; 
 }
 
 .navbar a {
@@ -105,7 +105,7 @@ img {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./img/homecafe.png"); /* Adicionei um overlay escuro para melhorar leitura do texto sobre a imagem */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./img/homecafe.png"); 
     background-size: cover;
     background-position: center;
 }
@@ -133,8 +133,8 @@ img {
     display: flex;
     align-items: center;
     background-color: var(--black);
-    flex-wrap: wrap; /* Permite quebrar linha no mobile */
-    border-radius: 1rem; /* Acabamento melhor */
+    flex-wrap: wrap; 
+    border-radius: 1rem; 
     overflow: hidden;
 }
 
@@ -144,7 +144,7 @@ img {
 
 .nosso-cafe .row .container-image img {
     width: 100%;
-    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    object-fit: cover; 
 }
 
 .nosso-cafe .row .content {
@@ -165,7 +165,7 @@ img {
     padding: 1rem 0;
 }
 
-/* --- LOJA & RECEITAS (Grid System Compartilhado) --- */
+/* --- LOJA & RECEITAS --- */
 .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -177,7 +177,7 @@ img {
     text-align: center;
     border: var(--border);
     padding: 3rem 2rem;
-    border-radius: 0.5rem; /* Suaviza os cantos */
+    border-radius: 0.5rem; 
 }
 
 .loja .box:hover,
@@ -193,7 +193,7 @@ img {
 .loja .box img,
 .receitas .box img {
     height: 20rem;
-    margin: 0 auto; /* Centraliza imagem no box */
+    margin: 0 auto; 
 }
 
 .loja .box h3,
@@ -245,7 +245,7 @@ img {
 }
 
 .sobrenos .box-container .box {
-    background-color: var(--black); /* Fundo diferente para destacar */
+    background-color: var(--black); 
     border: var(--border);
     padding: 3rem;
     text-align: center;
@@ -300,10 +300,10 @@ img {
     margin-top: 1rem;
 }
 
-/* --- MEDIA QUERIES (Responsividade) --- */
+/* --- MEDIA QUERIES  --- */
 @media (max-width: 768px) {
     html {
-        font-size: 55%; /* Reduz levemente a fonte base em telas menores */
+        font-size: 55%; 
     }
 
     .header {
@@ -331,3 +331,4 @@ img {
         font-size: 4.5rem;
     }
 }
+
